@@ -2,21 +2,20 @@ body {
     background-image: url(Images/background.png), linear-gradient(90deg, #F69430 0%, #F14E29 34.39%, #F3632B 61.22%, #F5832F 79.27%, #F58220 100%);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     width: 487px;
     height: 487px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 200px;
+    margin-top: 200px;
     background-color: #E1E1E1;
     box-shadow: 1px 4px 8px #313838;
-}
-
-main {
-    display: flex;
-    justify-content: center;
 }
 
 .btn-wrapper {
@@ -74,7 +73,7 @@ p {
     flex-direction: column;
 }
 
-#user-input, #password-input {
+.form-group input {
     text-align: center;
     width: 340px;
     height: 51px;
@@ -84,11 +83,18 @@ p {
     color: #6d6d6d;
     border: none;
     outline: none;
+    font-weight: 900;
+}
+
+.form-group input::placeholder{
+    color: #a0a0a09a;
+    margin-left: 130px;
 }
 
 #password-input {
     width: 290px;
 }
+
 
 input[type="button"] {
     width: 50px;
@@ -111,12 +117,6 @@ input[type="button"] {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
-
-.container-2 img {
-    height: 53px;
-    position: relative;
-    top: 30px;
 }
 
 .form-group img:first-child {
@@ -151,7 +151,7 @@ button:hover {
     background: #d65142;
 }
 
-.column {
+.settings {
     font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column;
@@ -159,22 +159,22 @@ button:hover {
     align-items: flex-end;
 }
 
-.login-submit-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.column a {
+.settings a {
     margin-top: 20px;
     text-decoration: none;
     color: #000000;
     font-weight: bold;
 }
 
-.column a:hover {
+.settings a:hover {
     border-bottom: 2px solid #000000;
     padding-bottom: 3px;
+}
+
+.login-submit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 input[type="checkbox"] {

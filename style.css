@@ -13,7 +13,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin: 200px 0 200px 0;
     background-color: #E1E1E1;
     box-shadow: 1px 4px 8px #313838;
 }
@@ -86,7 +86,7 @@ p {
     font-weight: 900;
 }
 
-.form-group input::placeholder{
+.form-group input::placeholder {
     color: #a0a0a09a;
     margin-left: 130px;
 }
@@ -133,7 +133,7 @@ input[type="button"] {
     height: 33px;
 }
 
-button {
+input[type="submit"] {
     width: 183px;
     height: 60px;
     background: #E65848;
@@ -147,7 +147,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+input[type="submit"]:hover {
     background: #d65142;
 }
 
